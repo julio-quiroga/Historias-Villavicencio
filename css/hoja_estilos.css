@@ -1,0 +1,322 @@
+@font-face {
+	font-family: Montserrat-MediumItalic;
+	src: url('fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Montserrat-ThinItalic;
+	src: url('fonts/Montserrat/Montserrat-ThinItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-Light;
+	src: url('fonts/Quicksand/static/Quicksand-Light.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Montserrat-BlackItalic;
+	src: url('fonts/Montserrat/Montserrat-BlackItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-SemiBold;
+	src: url('fonts/Quicksand/static/Quicksand-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-VariableFont_wght;
+	src: url('fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Montserrat-BoldItalic;
+	src: url('fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-Medium;
+	src: url('fonts/Quicksand/static/Quicksand-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-Bold;
+	src: url('fonts/Quicksand/static/Quicksand-Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Quicksand-VariableFont_wght;
+	src: url('fonts/Quicksand/Quicksand-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Sans_Italic;
+	src: url('fonts/Product-sans/Sans_Italic.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Sans_Bold;
+	src: url('fonts/Product-sans/Sans_Bold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Sans_Regular;
+	src: url('fonts/Product-sans/Sans_Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+	font-family: Sans_Bold_Italic;
+	src: url('fonts/Product-sans/Sans_Bold_Italic.ttf') format('truetype');
+}
+
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+@media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+
+}
+@media (max-device-width: 542px) {
+	.contenido-principal__contenedor {
+		width: 100%;
+		display: block;
+		flex: auto;
+		flex-wrap: wrap;
+	}
+
+	html {
+		font-size: 20px;
+	}
+
+	.divizor {
+		width: 100%;
+		display: block;
+		margin-bottom: 25px;
+	}
+
+	
+}
+
+@media (max-device-width: 520px) {
+	.contenido-principal__imagen {
+		display: none !important;
+	}
+	.ft-img {
+		display: none !important;
+	}
+
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) {  
+	.contenido-principal__imagen{
+		width: 50%;
+	}
+	.contenido-principal__contenedor{
+		width: 50%;
+	}
+	.contenido-principal__contenedor {
+		
+		font-size: 20px;
+		
+	}
+}  
+  
+
+/* ============ desktop view ============ */
+@media all and (min-width: 578px) {
+	.navbar .nav-item .dropdown-menu {
+		display: none;
+		width:100%;
+	}
+
+
+	.navbar .nav-item:hover .dropdown-menu {
+		display: block;
+	}
+
+	.navbar .nav-item .dropdown-menu {
+		margin-top: 0;
+	}
+	
+}
+/* ============ desktop view .end// ============ */
+
+.b-example-divider {
+	height: 1em;;
+	border: solid rgba(0, 0, 0, .15);
+	border-width: 4px 0;
+	box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	background: rgb(255,255,255);
+	background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,183,255,1) 59%, rgba(255,255,255,1) 100%);
+  }
+
+.form-control-dark {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: var(--bs-gray);
+}
+.form-control-dark:focus {
+  color: #fff;
+  background-color: var(--bs-dark);
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.text-small {
+  font-size: 85%;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+nav {
+	font-family: Quicksand-Bold;
+	color: black;
+	
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+.contenedor {
+	max-width: 100%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.contenido-principal {
+	margin-bottom: 50px;
+	display: inline-flex;
+	align-items: center;
+	background: rgb(255,255,255);
+	
+}
+
+.contenido-principal__imagen {
+	vertical-align: top;
+	
+	width: 50%;
+	max-width: 550px;
+	
+	margin-left: 20px;
+}
+
+.contenido-principal__contenedor {
+	width: 50%;
+	
+	margin-left:30px;
+}
+
+.contenido-principal__titulo {
+	font-weight: normal;
+	font-size: 28px;
+	font-family: Quicksand-SemiBold;
+	margin-top: 20px;
+	color: black;
+	
+}
+
+.contenido-principal__resumen {
+	font-family: Quicksand-VariableFont_wght;
+	line-height: 28px;
+	color:black;
+}
+.contenido-principal_medio {
+	font-family: Quicksand-Medium;
+	line-height: 28px;
+	color:black;
+}
+#historia{
+	font-size: 35px;
+	font-family: Montserrat-BoldItalic;
+	
+	color: #00d986;
+	
+}
+
+.btn-space {
+    margin-left: 10px;
+}
+
+.menunav {
+	background: #00b7ff;
+	/*background: #2b5ac4; */
+	/*background: #00d986; */
+}
+.footer-custom {
+	background: url("../img/fig.png") no-repeat rgb(43, 90, 182);
+	background-size: 1980px 250px;
+}
+.title-gallery {
+	font-family: Montserrat-MediumItalic;
+}
+
+.modal{
+
+	background: rgba(0, 0, 0, 0.49);
+}
+.modal-content {
+	background: rgba(0, 0, 0, 0.00);
+}
+.btn-close {
+
+	
+	background: url("../img/close.png") no-repeat rgba(255, 0, 0, 0.00);
+	background-size: 30px 30px;
+}
+
+.card:hover {
+	-webkit-transform: scale(0.5);
+	transform: scale(1.1);
+	
+
+}
+
+div.card:hover {
+	transform: scale(1.05);
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.6);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.4);
+	transition: box-shadow 2s, transform 500ms, filter 500ms ease-in-out;
+}
+div.blur {
+	filter: blur(3px);
+	transform: scale(0.95);
+}
+
+.imgt:hover {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	box-shadow: 0px 0px 15px 15px #00b7ff;
+	-webkit-box-shadow: 0px 0px 15px 15px #00b7ff;
+	transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+}
+
+.modal-open .container-fluid,
+.modal-open .container {
+	-webkit-filter: blur(2.5px);
+	-moz-filter: blur(2.5px);
+	
+	-ms-filter: blur(2.5px);
+	filter: blur(2.5px);
+}
+/*paleta de colores*/
+/*background: #00b7ff;*/
+/*background: #2b5ac4; */
+/*background: #00d986; */

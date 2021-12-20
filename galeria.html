@@ -1,0 +1,605 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" http-equiv="SM-UA-Compatible" content="width=device-width, initial-scale=1">
+    <meta name="author" content="jhonthan rojas,julio cesar, hector, and Bootstrap contributors">
+
+    <title>Galeria</title>
+
+
+    <!-- Bootstrap core CSS y css desarrollados, icon-->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icono.png">
+    <link rel="stylesheet" type="text/css" href="css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link href="css/hoja_estilos.css" rel="stylesheet">
+    <link href="css/motion.css" rel="stylesheet">
+    <link href="css/corrusell.css" rel="stylesheet" type="text/css">
+    <link href="css/tarjetas.css" rel="stylesheet" type="text/css">
+    <link href="css/Btn_Redes" rel="stylesheet" type="text/css">
+    
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+            .contenido-principal__imagen{
+
+                display: inline-block;
+                width: 100%;
+            }
+            
+        }
+        @media (min-width: 1440px) {
+
+            .contenido-principal__imagen{
+
+                display: block;
+            }
+            .contenido-principal__imagen{
+		        width: 100%;
+	        }
+	        .contenido-principal__contenedor{
+		        width: 50%;
+	        }
+            
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <!-- header con  logo y nbusqueda -->
+    <div class="container">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2 mb-2 border-bottom mx-auto ">
+            <p href="index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+                <img width="156" height="65" src="img/001.bmp" />
+            </p>
+
+
+            <div class="col-md-3 text-end ">
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3 d-flex">
+                    <input id="txt_buscar" type="search" class="form-control form-control-ligth" placeholder="Buscar..." aria-label="Search">
+
+                    <button type="button" class="btn btn-primary btn-space " onclick="buscar()">Buscar</button>
+                </form>
+            </div>
+        </header>
+    </div>
+    <!-- barra del menu navbar-->
+
+    <nav class="navbar navbar-expand-sm navbar-dark menunav" aria-label="Third navbar example">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample03">
+                <ul class="navbar-nav me-auto mb-2 mb-sm-0  motion">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false" role="button">Categorias</a>
+                        <ul class="dropdown-menu " aria-labelledby="dropdown03">
+                            <li><a class="dropdown-item" href="#">Deporte y Recreacion</a></li>
+                            <li><a class="dropdown-item" href="#">Educacion y Procesos</a></li>
+                            <li><a class="dropdown-item" href="#empleabilidad">Empleabilidad </a></li>
+                            <li><a class="dropdown-item" href="#">Cultura Ciudadana </a></li>
+                            <li><a class="dropdown-item" href="#sostenibilidad">Sostenibilidad</a></li>
+                            <li><a class="dropdown-item" href="#ambiente">Medio Ambiente </a></li>
+                            <li><a class="dropdown-item" href="#tecnologia">Tecnologia y Medio de Conservacion</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- separador -->
+
+    <div class="b-example-divider "></div>
+
+
+    <!-- tarjetas de video categoria Medio Ambiente -->
+    <div id="ambiente">
+        <div class="container px-2 py-2" id="custom-cards">
+            <h2 class="pb-2 border-bottom title-gallery">Medio Ambiente</h2>
+            <div id="" class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5 ">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/dondaniel.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Historia Don Daniel.</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button" ">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_uno" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Villa Lorena.</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>Comuna #8.</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- separador -->
+
+    <div class="b-example-divider "></div>
+
+
+    <!-- tarjetas de video categoria empleabilidad -->
+    <div class="empleabilidad" id="empleabilidad">
+        <div class="container px-2 py-2" id="custom-cards">
+            <h2 class="pb-2 border-bottom title-gallery">Empleabilidad</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/AJEDRE.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button" ">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cuatro" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/FUNELAMOR.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button" ">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cinco" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- separador -->
+
+    <div class="b-example-divider "></div>
+
+    <!-- tarjetas de video categoria empleabilidad -->
+    <div class="tecnologia container-fluid" id="tecnologia">
+        <div class="container px-2 py-2" id="custom-cards">
+            <h2 class="pb-2 border-bottom title-gallery">Tecnologia</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/SALOME.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button" ">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cuatro" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/INGLES.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button" ">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_uno" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- separador -->
+
+    <div class="b-example-divider "></div>
+
+    <!-- tarjetas de video categoria sostenibilidad -->
+    <div class="sostenibilidad" id="sostenibilidad">
+        <div class="container px-2 py-2" id="custom-cards">
+            <h2 class="pb-2 border-bottom title-gallery">Sostenibilidad</h2>
+
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/LAPSICOLOGA.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cuatro" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Earth</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>3d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/ELPAPI.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cinco" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('./img/poster/LUISVELES.png');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                            <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h2>
+                            <ul class="d-flex list-unstyled mt-auto">
+                                <li class="me-auto btn btn-outline-light btn-floating m-1 imgt" href="index.html" role="button">
+                                    <img data-bs-toggle="modal" data-tagVideo="" data-bs-target="#modal_cinco" src="img/icono.png" alt="Bootstrap" width="40" height="40" class=" border-black">
+                                </li>
+                                <li class="d-flex align-items-center me-3">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill" /></svg>
+                                    <small>Pakistan</small>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3" /></svg>
+                                    <small>4d</small>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- pie de pagina-->
+
+    <footer class=" text-center text-white footer-custom ">
+        <!-- Grid container -->
+        <div class="container p-4 pb-0 ft-img">
+            <!-- Section: Social media -->
+            <div class="row">
+                <div class="col">
+                    <img class="border-black " src="img/logovillavodos.png" width="400" height="100">
+                </div>
+                <div class="col">
+                    <img class="border-black" src="img/lacan.png" width="400" height="100">
+                </div>
+
+
+            </div>
+
+
+        </div>
+        <!-- Grid container -->
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(1, 4, 8, 0.80);">
+            © 2021 -
+            <a class="text-white" href="">Alcaldía de Villavicencio. “La ciudad cambia contigo”.</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- Modal01 -->
+    <div class="modal fade" id="modal_uno" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-20%20DON%20DANIEL.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_dos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame2" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-05-27%20DIANA%20SARMIENTO%20UBUNTU.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_tres" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame3" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-01%20HISTORIA%20VICTOR%20SANTA%20F%C3%89.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_cuatro" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame4" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-10%20YEISON%20EL%20PAPI.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_cinco" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame5" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-17%20WILTERMAN%20ARIZA.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_seis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame6" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-22%20HISTORIA%20DON%20CARLO.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_siete" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame7" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-24%20PROFE%20ANGELA.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal_ocho" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame8" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-06-29%20HISTORIA%20AJEDREZ.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_nueve" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame9" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-07-07%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20SALOME.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_dies" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame10" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-07-15%20MISTER%20Luis%20Ve%CC%81lez.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_once" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame11" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-07-28%20CIUDAD%20CAMBIA%20CONTIGO%20AMY%20PROFE%20DE%20INGLES.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_doce" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame12" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-08-04%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20MAR%C3%8DA%20DEL%20MAR.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_trece" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame13" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-08-04%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20MAR%C3%8DA%20DEL%20MAR.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_catorce" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame14" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-08-11%20RESUMEN%20LA%20CIUDAD%20CAMBIA%20CONTIGO.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal_quince" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close closeModal" data-bs-dismiss="modal" aria-label="Close" onclick="open_close()"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9 video-src" id="video">
+                        <video id="myFrame15" controls src="https://camilo9497.github.io/videos-alcaldia/assets/21-08-25%20LA%20CIUDAD%20CAMBIA%20CONTIGO%20FUNLLEAMOR.mp4" allow="autoplay;" allowfullscreen></video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="js/corrusell.js" type="text/javascript"></script>
+    <script src="js/buscar.js" type="text/javascript"></script>
+    <script>
+
+        var item = $(".card");
+
+        // agrego la clase blur a todos los 'ítem' que NO sea al que le se le esta aplicando el evento 'hover'
+        item.hover(function () {
+            item.not($(this)).addClass('blur');
+            // al perder el foco, retiro la clase a todos los 'item'
+        }, function () {
+            item.removeClass('blur');
+        });
+    </script>
+
+</body>
+</html>
